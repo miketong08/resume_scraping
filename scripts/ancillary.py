@@ -50,3 +50,4 @@ def get_num_images(driver, url):
 
     except:
         return 0
+
