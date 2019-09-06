@@ -39,6 +39,7 @@ def update_search_page(url, page):
         end_loc = url[start_loc:].find('&') + start_loc
         return url[:start_loc] + 's={}'.format(url_num) + url[end_loc:]
 
+
 def get_num_images(driver, url):
     driver.get(url)
     try:
@@ -51,3 +52,16 @@ def get_num_images(driver, url):
     except:
         return 0
 
+
+def get_education(driver, url):
+    driver.get(url)
+    try:
+        paths = driver.find_elements_by_xpath('/html/body/section/section/section/div[1]/p/span')
+        education = [i.text for i in paths if i.text.find('education') != -1]  # sometimes the last item is a liscense
+        if len(education) == 0:
+            return education[0].split(':')[-1].strip()
+        else:
+            return np.nan
+    except:
+        return np.nan
+    
