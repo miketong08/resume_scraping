@@ -2,8 +2,8 @@
 
 This repo contains Jupyter notebook tutorials in Python to perform webscraping, EDA, cleaning, and machine learning tasks such as classification and NLP.
 
-Classification and Machine learning - Prince Mallari (mallari\_prince@bah.com)  
-Webscraping - Mike Tong (tong\_michael@bah.com)
+__Classification and Machine learning__ - *Prince Mallari* (mallari\_prince@bah.com)  
+__Webscraping__ - *Mike Tong* (tong\_michael@bah.com)
 
 The data pulled is pulled over a couple of months at irregular intervals, which is compiled as `assets/data_large.csv`. Duplicates are dropped to keep the data as a single file while still meeting the github file size limitations, and contains about 60K unique samples with 8 features. 
 
